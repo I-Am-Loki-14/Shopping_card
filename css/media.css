@@ -2,5 +2,11 @@
     .product-info{
         display: none;
     }
-    
+       .order-comfirm h1{
+        font-size: 1rem;
+       }
+                .order-comfirm{
+                    width: 80%;
+                    background-color: orange;
+                }
 }

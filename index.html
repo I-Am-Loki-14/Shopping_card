@@ -8,24 +8,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
     <div class="container">
+        <!-- order comfirm show toggle -->
+        <div class="order-comfirm" id="order-comfirm">
+            <h1>Are you sure to order these items?</h1>
+        </div>
+
+        <!-- order confirm toggle -->
         <div class="shoping-card">
             <div class="shoping-card-header">
                 <h1>Shoping-card</h1>
                 <h3>3-items</h3>
             </div>
-            <table border="1" width="100%">
+            <hr>
+            <table border="0" width="100%">
                 <th>Product details</th>
                 <th> Price</th>
                 <th> Quantity</th>
                 <th> Total</th>
                 <tr>
+
                     <td class="product-details">
                         <div class="product-img">
-                            <img src="./img/football.jpg" alt="" width="150px">
+                            <img src="./img/powerbank-cellphone-wooden-table.jpg" alt="" width="150px">
 
 
                         </div>
@@ -42,13 +51,13 @@
                         <i class="fa-solid fa-plus fa-lg" style="color: #000000;"></i>
 
                     </td>
-                    <td class="total">&dollar;&ensp;7500.00</td>
-                    <td class="total">&dollar;&ensp;7500.00</td>
+                    <td class="total">&ensp;2</td>
+                    <td class="total">&dollar;&ensp;15000.00</td>
                 </tr>
                 <tr>
                     <td class="product-details">
                         <div class="product-img">
-                            <img src="./img/football.jpg" alt="" width="150px">
+                            <img src="./img/still-life-tech-device.jpg" alt="" width="150px">
                         </div>
                         <div class="product-info">
                             <h3>Product 1</h3>
@@ -63,13 +72,14 @@
                         <i class="fa-solid fa-plus fa-lg" style="color: #000000;"></i>
 
                     </td>
-                    <td class="total">&dollar;&ensp;7500.00</td>
-                    <td class="total">&dollar;&ensp;7500.00</td>
+                    <td class="total">&ensp;3</td>
+                    <td class="total">&dollar;&ensp;22500.00</td>
                 </tr>
                 <tr>
                     <td class="product-details">
                         <div class="product-img">
-                            <img src="./img/football.jpg" alt="" width="150px">
+                            <img src="./img/wireless-earbuds-with-neon-cyberpunk-style-lighting.jpg" alt=""
+                                width="150px">
                         </div>
                         <div class="product-info">
                             <h3>Product 1</h3>
@@ -84,13 +94,14 @@
                         <i class="fa-solid fa-plus fa-lg" style="color: #000000;"></i>
 
                     </td>
-                    <td class="total">&dollar;&ensp;7500.00</td>
-                    <td class="total">&dollar;&ensp;7500.00</td>
+                    <td class="total">&ensp;5</td>
+                    <td class="total">&dollar;&ensp;37500.00</td>
                 </tr>
             </table>
 
         </div>
         <div class="product-card">
+
             <h1>Order summary</h1>
             <hr>
             <div class="order-summary">
@@ -108,10 +119,11 @@
             </div>
             <label for="">Discount</label>
             <div class="discount">
-                <input type="text" placeholder="Enter your discount code">
-                <button class="apply-btn">Apply</button>
+                <input type="text" placeholder="Enter your discount code" autofocus required>
+                <button class="apply-btn" id="apply-btn">Apply</button>
 
             </div>
+
             <div class="total-price">
                 <p>Total Price</p>
                 <p>&dollar;&ensp;2500</p>
